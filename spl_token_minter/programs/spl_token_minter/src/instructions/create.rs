@@ -6,7 +6,7 @@ use anchor_spl::{
     },
     token::{Mint, Token},
 };
-
+// Fn to create token mint 
 pub fn create_token_mint(
     ctx: Context<CreateTokenMint>,
     _token_decimals: u8,
