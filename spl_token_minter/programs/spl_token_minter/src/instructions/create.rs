@@ -19,6 +19,7 @@ pub fn create_token_mint(
         "Metadata account address: {}",
         &ctx.accounts.metadata_account.key()
     );
+    // CPI 
     create_metadata_accounts_v3(
         CpiContext::new(
             ctx.accounts.token_metadata_program.to_account_info(),
